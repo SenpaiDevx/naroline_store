@@ -2,6 +2,7 @@ import ProductList from "@/components/shared/product/product-list";
 // import sampleData from "@/db/sample-data";
 import React from "react";
 import { getLatestProducts } from "@/lib/actions/product.actions";
+import { Product } from "@/types";
 
 export const metadata = {
   title: "Naroline Store",
@@ -12,7 +13,7 @@ const delay = (ms: number | undefined) =>
 
 const HomePage = async () : Promise<React.ReactNode >=>  {
   await delay(3000);
-  const lastestProduct = await getLatestProducts();
+  const lastestProduct : Product[] = await getLatestProducts() as unknown as Product[];
   console.log(lastestProduct)
   return (
     <>

@@ -3,26 +3,7 @@ import ProductCard from "./product-card";
 // import { Prisma } from "@/lib/generated/prisma";
 import { Product } from "@/types";
 
-export interface ProductType  {
-  title?: string;
-  data: ProductInfo[];
-  limit : number;
-}
 
-export interface ProductInfo {
- name : string;
- slug : string;
- category : string;
- description : string;
- images : string[];
- price : number;
- brand : string[];
- rating : number;
- numReviews : number;
- stock : number;
- isFeatured : boolean;
- banner : string | null;
-}
 
 
 // <ProductCard key={product.slug} product={product} />
