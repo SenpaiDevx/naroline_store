@@ -18,7 +18,7 @@ const HomePage = async () : Promise<React.ReactNode >=>  {
   return (
     <>
       <div className="space-y-8">
-        <h2 className="h2-bold">Latest Naroline Products</h2>
+        <h2 className="h2-bold">THis is latest Mercy and Jai Merch check it out mga Tanga</h2>
           <ProductList title="Newest NAzi!! products" data={lastestProduct} limit={6}/>
       </div>
     </>
